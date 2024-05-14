@@ -90,7 +90,7 @@ export default function TimePage() {
                     htmlFor="city"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Город
+                    Город на английском (например Bishkek)
                   </label>
                   <div className="mt-1">
                     <input
@@ -110,7 +110,7 @@ export default function TimePage() {
                     htmlFor="country"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Страна
+                    Страна на английском (например Kyrgyzstan)
                   </label>
                   <div className="mt-1">
                     <input
