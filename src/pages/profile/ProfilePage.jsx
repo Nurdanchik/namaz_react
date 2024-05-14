@@ -52,31 +52,31 @@ export default function ProfilePage() {
                 Имя пользователя
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                {userProfile.username}
+                {userProfile ? userProfile.username : 'Loading...'}
               </dd>
             </div>
             <div className="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm font-medium text-gray-500">Почта</dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                {userProfile.email}
+                {userProfile ? userProfile.email : 'Loading...'}
               </dd>
             </div>
             <div className="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm font-medium text-gray-500">Город</dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                {userProfile.city}
+                {userProfile ? userProfile.city : 'Loading...'}
               </dd>
             </div>
             <div className="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm font-medium text-gray-500">Страна</dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                {userProfile.country}
+                {userProfile ? userProfile.country : 'Loading...'}
               </dd>
             </div>
             <div className="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt className="text-sm font-medium text-gray-500">Пол</dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                {userProfile.sex === "male" ? "Мужской" : "Женский"}
+                {userProfile ? (userProfile.sex === "male" ? "Мужской" : "Женский") : 'Loading...'}
               </dd>
             </div>
           </dl>
