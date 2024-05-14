@@ -9,7 +9,7 @@ export default function Header() {
         aria-label="Global"
       >
         <div>
-          <Link to="/" className="font-bold text-[24px]">
+          <Link to="/home" className="font-bold text-[24px]">
             HowToNamaz
           </Link>
         </div>
